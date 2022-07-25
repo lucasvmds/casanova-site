@@ -1,0 +1,22 @@
+#page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+    background-color: #FFF;
+    box-shadow: 0 .2em 2em rgba(0, 0, 0, .1);
+}
+
+#page-header > a > img {
+    width: 12em;
+    height: auto;
+}
+
+#page-header > address > a > svg {
+    margin: 0 .5em;
+}
+
+#page-header > nav {
+    display: flex;
+    gap: 2em;
+}
