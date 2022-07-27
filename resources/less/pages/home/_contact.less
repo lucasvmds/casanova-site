@@ -1,0 +1,28 @@
+#contato {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    gap: 3em;
+    padding: 5em 0 5em 20%;
+    background: url(/images/home/contact-background.png) no-repeat center;
+    background-size: contain;
+
+    & div {
+        & > h2 {
+            padding: 1.5em;
+            font-size: 2em;
+            color: #FFF;
+            background-color: var(--accent-color);
+            clip-path: polygon(7% 0%, 100% 0%, 100% 100%, 7% 100%, 0% 50%);
+        }
+
+        & > p {
+            text-indent: 1em;
+            margin: 5em 15% 5em 0;
+        }
+
+        & > ul {
+            margin-right: 15%;
+        }
+    }
+}

@@ -87,4 +87,15 @@
             @endfor
         </div>
     </section>
+
+    <section id="contato">
+        <div>
+            <h2>Fale Conosco</h2>
+            <p>
+                Se você deseja conversar com a gente, não perca tempo, entre em contato conosco através de uma das opções abaixo, ou se preferir, deixa uma mensagem no formulário ao lado que entraremos em contato o mais breve possível.
+            </p>
+            <x-contact-info />
+        </div>
+        <x-contact-form />
+    </section>
 @endsection
