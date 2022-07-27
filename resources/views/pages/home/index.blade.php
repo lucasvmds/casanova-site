@@ -73,4 +73,18 @@
             <x-team-item name="fulano" />
         </ul>
     </section>
+
+    <section id="clientes">
+        <div id="clientes-text">
+            <h2>Nossos Clientes</h2>
+            <p>
+                Nada melhor para mostrar a você, cliente ou possível cliente, que realmente nos comprometemos com nosso <b>atendimento</b>, <b>serviço</b> e <b>suporte</b>, do que apresentar alguns dos muitos clientes que confiam no nossa empresa para a execução de seus serviços, independente da área escolhida.
+            </p>
+        </div>
+        <div id="clientes-logos">
+            @for ($i = 0; $i < 4; $i++)
+                <img src="{{ asset('images/logos/casa-nova/icone.png') }}" width="90" height="90" loading="lazy" alt="logo da empresa casa nova empreendimentos" />
+            @endfor
+        </div>
+    </section>
 @endsection
