@@ -63,4 +63,14 @@
             <x-segment-item type="seguranca" />
         </ul>
     </section>
+
+    <section id="equipe">
+        <h2>
+            Para desempenharmos nossos serviços com qualidade, contamos com profissionais altamente capacitados, especialistas em suas áreas de atuação. Então pode ficar tranquilo(a) e deixar tudo com a gente.
+        </h2>
+        <ul>
+            <x-team-item name="fulano" />
+            <x-team-item name="fulano" />
+        </ul>
+    </section>
 @endsection
