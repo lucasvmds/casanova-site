@@ -47,4 +47,20 @@
             <img src="{{ asset('images/home/about.jpeg') }}" width="630" height="630" loading="lazy" alt="pessoas sentadas à mesa em reunião " />
         </div>
     </section>
+
+    <section id="segmentos">
+        <div>
+            <h2>Áreas de Atuação</h2>
+            <img src="{{ asset('images/home/slides/initial_slide.png') }}" width="1920" height="160" loading="lazy" />
+        </div>
+        <p>
+            Nós já adiantamos um pouco que somos uma empresa completa, atuando em diversos segmentos, agora vamos apresentar com mais detalhes cada um dos nossos ramos de atuação.
+        </p>
+        <ul>
+            <x-segment-item type="ambiental" />
+            <x-segment-item type="financeiro" />
+            <x-segment-item type="veiculos" />
+            <x-segment-item type="seguranca" />
+        </ul>
+    </section>
 @endsection

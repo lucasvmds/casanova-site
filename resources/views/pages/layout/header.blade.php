@@ -1,6 +1,6 @@
 <header id="page-header">
     <a href="/">
-        <img width="213" height="67" alt="logo da casa nova empreendimentos" src="{{ asset('images/logo.png') }}" />
+        <img width="213" height="67" alt="logo da casa nova empreendimentos" src="{{ asset('images/logos/casa-nova/logo.png') }}" />
     </a>
     <nav>
         <a href="/">Início</a>

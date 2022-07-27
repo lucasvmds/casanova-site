@@ -1,0 +1,71 @@
+#segmentos {
+    & > div {
+        position: relative;
+        background-color: var(--accent-color);
+
+        & > h2 {
+            position: relative;
+            z-index: 2;
+            padding: 2em;
+            font-size: 2em;
+            color: #FFF;
+            text-align: center;
+            mix-blend-mode: normal;
+        }
+
+        & > img {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 100% 15%;
+            mix-blend-mode: multiply;
+        }
+    }
+
+    & > p {
+        margin: 3em auto;
+        max-width: 60%;
+        text-align: center;
+    }
+
+    & > ul {
+        padding: 0;
+        margin: 5em auto;
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+
+        & > li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            gap: 1em;
+            padding: 1em;
+            width: 20%;
+            max-width: 250px;
+            border-radius: 1em;
+            box-shadow: 0 .2em 2em rgba(0, 0, 0, .1);
+
+            & > h3 {
+                text-align: center;
+            }
+
+            & > p {
+                text-align: center;
+                font-size: .85em;
+            }
+
+            & > a {
+                color: var(--accent-color);
+                & > svg {
+                    margin-left: .3em;
+                }
+            }
+        }
+    }
+}
