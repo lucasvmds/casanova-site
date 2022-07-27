@@ -1,0 +1,48 @@
+#empresa {
+    margin: 10em 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    & > &-text {
+        & > h2 {
+            font-size: 2em;
+
+            & > span {
+                display: inline-block;
+                padding: .5em .2em;
+                color: #FFF;
+                background-color: var(--accent-color);
+            }
+        }
+
+        & > p {
+            margin: 4em 0;
+            font-size: 1.1em;
+            text-indent: 1em;
+            text-align: justify;
+        }
+    }
+
+    & > &-image {
+        position: relative;
+        margin-right: 10em;
+        &:before {
+            position: absolute;
+            z-index: -1;
+            top: -15%;
+            right: -15%;
+            width: 35%;
+            height: 80%;
+            background-color: var(--accent-color);
+            content: '';
+        }
+
+        & > img {
+            width: 30em;
+            height: 30em;
+            object-fit: cover;
+            border-radius: 2em;
+        }
+    }
+}
