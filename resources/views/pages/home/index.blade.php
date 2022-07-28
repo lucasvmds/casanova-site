@@ -1,5 +1,8 @@
 @extends('pages.layout.base')
 @section('title') Início @endsection
+@push('scripts')
+    @vite('resources/js/pages/home.js')
+@endpush
 
 @section('content')
     <section id="home-slides">

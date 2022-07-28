@@ -1,14 +1,21 @@
 #page-header {
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .5em 1em;
     background-color: #FFF;
     box-shadow: 0 .2em 2em rgba(0, 0, 0, .1);
+    animation: page-header-out .2s;
 
     & > a > img {
         width: 12em;
         height: auto;
+        transition: width .2s;
     }
 
     & > address > a > svg {
@@ -19,6 +26,28 @@
         display: flex;
         gap: 2em;
     }
+
+    &.fixed {
+        position: fixed;
+        animation: page-header-in .2s;
+        
+        & > a > img {
+            width: 6em;
+        }
+    }
+    
+    @keyframes page-header-in {
+        from { top: -4em; }
+        to { top: 0; }
+    }
+    @keyframes page-header-out {
+        from {
+            position: fixed;
+            top: 0;
+        }
+        to {
+            position: fixed;
+            top: -5em;
+        }
+    }
 }
-
-
