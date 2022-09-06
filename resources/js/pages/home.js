@@ -60,11 +60,35 @@ function linkScrollTo(event)
         behavior: 'smooth',
     });
 }
-// Adiciona ouvinte de eventos nos links da home
-document.addEventListener('DOMContentLoaded', () => {
+
+/**
+ * Adicione ouvintes de evento nos links locais
+ * 
+ * @returns {void}
+ */
+function addLinksListener()
+{
     document.querySelectorAll('a').forEach(link => {
         if (/#/.test(link.href)) link.addEventListener('click', linkScrollTo);
     });
+}
+
+/**
+ * Rola até a seção informada no hash da página, se houver
+ * 
+ * @returns {void}
+ */
+function initHashScroll()
+{
+    if (location.hash) {
+        window.scrollTo({
+            top: document.querySelector(location.hash).offsetTop,
+        });
+    }
+}
+document.addEventListener('DOMContentLoaded', () => {
+    addLinksListener();
+    initHashScroll();
 }, { once: true });
 
 // Ouvinte de evento para fixar o menu na roalgem da página

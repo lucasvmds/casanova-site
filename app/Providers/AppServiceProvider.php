@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +25,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        View::composer('pages.layout.header', function($view) {
+            $view->with(
+                'path',
+                app(Request::class)->path()
+            );
+        });
     }
 }

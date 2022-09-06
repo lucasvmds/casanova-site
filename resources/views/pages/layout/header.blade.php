@@ -3,7 +3,12 @@
         <img width="213" height="67" alt="logo da casa nova empreendimentos" src="{{ asset('images/logos/casa-nova/logo.png') }}" />
     </a>
     <nav>
-        <a href="/">Início</a>
+        @if ($path === '/')
+            <a href="/#body">Início</a>
+        @else
+            <a href="/">Início</a>
+        @endif
+        
         <a href="/#empresa">A Empresa</a>
         <a href="/#segmentos">Segmentos</a>
         <a href="/#equipe">Equipe</a>

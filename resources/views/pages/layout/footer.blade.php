@@ -1,7 +1,7 @@
 <footer id="page-footer">
     <small>
-        {{ (new DateTime)->format('Y') }}
         &#169;
+        2022 - {{ (new DateTime)->format('Y') }}
         Casa Nova Empreendimentos. Todos os direitos reservados.
     </small>
 </footer>
