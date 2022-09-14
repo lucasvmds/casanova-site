@@ -18,4 +18,37 @@ class SegmentController extends Controller
     {
         return view('pages.segments.financial');
     }
+
+    /**
+     * Renderiza a página sobre os serviços ambientais
+     * 
+     * @return View|Factory 
+     * @throws BindingResolutionException 
+     */
+    public function environmental()
+    {
+        return view('pages.segments.environmental');
+    }
+
+    /**
+     * Renderiza a página sobre a segurança privada
+     * 
+     * @return View|Factory 
+     * @throws BindingResolutionException 
+     */
+    public function security()
+    {
+        return view('pages.segments.security');
+    }
+
+    /**
+     * Renderiza a página sobre a garagem de veículos
+     * 
+     * @return View|Factory 
+     * @throws BindingResolutionException 
+     */
+    public function vehicles()
+    {
+        return view('pages.segments.vehicles');
+    }
 }

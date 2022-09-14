@@ -26,10 +26,17 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer('pages.layout.header', function($view) {
-            $view->with(
-                'path',
-                app(Request::class)->path()
-            );
+            $path = app(Request::class)->path();
+            $view->with([
+                'path' => $path,
+                'logo' => match ($path) {
+                    '/' => 'casa-nova',
+                    'servicos-ambientais' => 'ambiental',
+                    'servicos-financeiros' => 'financeiro',
+                    'seguranca-privada' => 'seguranca',
+                    'compra-venda-veiculos' => 'veiculos',
+                },
+            ]);
         });
     }
 }

@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
-Route::get('servicos-ambientais', [SegmentController::class, 'financial'])->name('segments.financial');
+Route::get('servicos-ambientais', [SegmentController::class, 'environmental'])->name('segments.environmental');
 Route::get('servicos-financeiros', [SegmentController::class, 'financial'])->name('segments.financial');
-Route::get('compra-venda-veiculos', [SegmentController::class, 'financial'])->name('segments.financial');
-Route::get('seguranca-privada', [SegmentController::class, 'financial'])->name('segments.financial');
+Route::get('compra-venda-veiculos', [SegmentController::class, 'vehicles'])->name('segments.vehicles');
+Route::get('seguranca-privada', [SegmentController::class, 'security'])->name('segments.security');

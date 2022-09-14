@@ -90,12 +90,3 @@ document.addEventListener('DOMContentLoaded', () => {
     addLinksListener();
     initHashScroll();
 }, { once: true });
-
-// Ouvinte de evento para fixar o menu na roalgem da página
-document.addEventListener('scroll', () => {
-    if (document.querySelector('#empresa').offsetTop < document.scrollingElement.scrollTop) {
-        document.querySelector('#page-header').classList.add('fixed');
-    } else {
-        document.querySelector('#page-header').classList.remove('fixed');
-    }
-});
