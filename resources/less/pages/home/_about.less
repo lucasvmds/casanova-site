@@ -4,6 +4,11 @@
     align-items: center;
     justify-content: center;
     gap: 3em;
+    @media (min-width: 2000px) {
+        margin: 10em auto;
+        max-width: 1920px;
+    }
+
     & > &-text {
         & > h2 {
             font-size: 2em;
@@ -27,6 +32,10 @@
     & > &-image {
         position: relative;
         margin-right: 10em;
+        @media (max-width: 1023px) {
+            display: none;
+        }
+
         &:before {
             position: absolute;
             z-index: -1;
@@ -39,10 +48,14 @@
         }
 
         & > img {
-            width: 30em;
-            height: 30em;
+            width: 30vw;
+            height: 30vw;
             object-fit: cover;
             border-radius: 2em;
+            @media (min-width: 2000px) {
+                width: 35em;
+                height: 35em;
+            }
         }
     }
 }

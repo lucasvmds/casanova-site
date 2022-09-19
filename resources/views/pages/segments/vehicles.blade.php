@@ -9,14 +9,14 @@
             <div>
                 <h2>Nossos Serviços</h2>
                 <p>
-                    A Casa Nova Veículos trabalha para te oferecer as melhores oportunidades na hora de comprar ou vender o seu veículo. Seja na hora de realizar o sonho do carro próprio, ou na hora de trocar por um carro mais novo, e até mesmo na hora de comprar um veículo pra sua empresa.
+                    A Casa Nova Veículos trabalha para te oferecer as melhores oportunidades na hora de comprar ou vender o seu veículo. Seja na hora de realizar o sonho do carro próprio, ou na hora de trocar por um carro mais novo, e até mesmo na hora de comprar um veículo pra sua empresa. Seja ele leve ou pesado, moto ou carro, pode contar com a gente.
                 </p>
                 <p>
                     Nós trabalhamos com:
                 </p>
                 <ul>
-                    <li>Compra;</li>
-                    <li>Venda e venda consignada;</li>
+                    <li>Compra de veículos leves e pesados;</li>
+                    <li>Venda e venda consignada de veículos leves e pesados;</li>
                     <li>Financiamento e refinanciamento.</li>
                 </ul>
                 <p>

@@ -9,19 +9,19 @@
         <section id="home-slides">
             <ul id="slides">
                 <li>
-                    <x-slide-item position="0" />
+                    <x-slide-item item="empreendimentos" />
                 </li>
                 <li>
-                    <x-slide-item position="1" />
+                    <x-slide-item item="ambiental" />
                 </li>
                 <li>
-                    <x-slide-item position="2" />
+                    <x-slide-item item="financeiro" />
                 </li>
                 <li>
-                    <x-slide-item position="3" />
+                    <x-slide-item item="veiculos" />
                 </li>
                 <li>
-                    <x-slide-item position="4" />
+                    <x-slide-item item="seguranca" />
                 </li>
             </ul>
             <ul id="slides-selector" aria-hidden="true">
@@ -63,6 +63,7 @@
             <ul>
                 <x-segment-item type="ambiental" />
                 <x-segment-item type="financeiro" />
+                <x-segment-item type="seguros" />
                 <x-segment-item type="veiculos" />
                 <x-segment-item type="seguranca" />
             </ul>
@@ -70,15 +71,16 @@
 
         <section id="equipe">
             <h2>
-                Para desempenharmos nossos serviços com qualidade, contamos com profissionais altamente capacitados, especialistas em suas áreas de atuação. Então pode ficar tranquilo(a) e deixar tudo com a gente.
+                Para desempenharmos nossos serviços com qualidade, contamos com profissionais parceiros altamente capacitados, especialistas em suas áreas de atuação. Então pode ficar tranquilo(a) e deixar tudo com a gente.
             </h2>
             <ul>
-                <x-team-item name="fulano" />
-                <x-team-item name="fulano" />
+                <x-team-item name="agronomo" />
+                <x-team-item name="civil" />
+                <x-team-item name="advogado" />
             </ul>
         </section>
 
-        <section id="clientes">
+        {{-- <section id="clientes">
             <div id="clientes-text">
                 <h2>Nossos Clientes</h2>
                 <p>
@@ -90,7 +92,7 @@
                     <img src="{{ asset('images/logos/casa-nova/icone.png') }}" width="90" height="90" loading="lazy" alt="logo da empresa casa nova empreendimentos" />
                 @endfor
             </div>
-        </section>
+        </section> --}}
 
         <section id="contato">
             <div>

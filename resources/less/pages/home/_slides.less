@@ -3,7 +3,11 @@
     background-image: url(/images/home/slides/slides_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden auto;
+    overflow: hidden;
+
+    @media (max-width: 1023px) {
+        padding: 3em 0 10em;
+    }
     
     & > #slides {
         position: relative;
@@ -23,8 +27,15 @@
             gap: 2em;
             padding: 0 2em;
 
+            @media (min-width: 2000px) {
+                padding: 0 calc( (100vw - 1920px) / 2 );
+            }
+
             & > .slide-text-container {
-                max-width: 50%;
+                @media (min-width: 1024px) {
+                    max-width: 50%;
+                }
+
                 & > h2 {
                     font-size: 2.5em;
 
@@ -48,6 +59,10 @@
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+
+                @media (max-width: 1023px) {
+                    display: none;
+                }
             }
         }
     }

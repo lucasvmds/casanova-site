@@ -16,6 +16,10 @@ class OtherSegments extends Component
             'link' => '/servicos-financeiros',
             'name' => 'Serviços Financeiros',
         ],
+        'seguros' => [
+            'link' => '/corretora-seguros',
+            'name' => 'Correta de Seguros',
+        ],
         'veiculos' => [
             'link' => '/compra-venda-veiculos',
             'name' => 'Compra e Venda de Veículos',

@@ -51,4 +51,15 @@ class SegmentController extends Controller
     {
         return view('pages.segments.vehicles');
     }
+
+    /**
+     * Renderiza a página sobre a corretora de seguros
+     * 
+     * @return View|Factory 
+     * @throws BindingResolutionException 
+     */
+    public function insurance()
+    {
+        return view('pages.segments.insurance');
+    }
 }

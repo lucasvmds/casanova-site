@@ -35,6 +35,8 @@ class AppServiceProvider extends ServiceProvider
                     'servicos-financeiros' => 'financeiro',
                     'seguranca-privada' => 'seguranca',
                     'compra-venda-veiculos' => 'veiculos',
+                    'corretora-seguros' => 'financeiro',
+                    default => 'financeiro',
                 },
             ]);
         });

@@ -1,12 +1,14 @@
 #page-header {
-    position: absolute;
+    display: flex;
+    position: relative;
     z-index: 300;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
     padding: .5em 1em;
     background-color: #FFF;
     box-shadow: 0 .2em 2em rgba(0, 0, 0, .1);
@@ -16,6 +18,10 @@
         width: 12em;
         height: auto;
         transition: width .2s;
+
+        @media (max-width: 1024px) {
+            width: 8em;
+        }
     }
 
     & > address > a > svg {
@@ -25,14 +31,50 @@
     & > nav {
         display: flex;
         gap: 2em;
+
+        @media (max-width: 1024px) {
+            min-width: 100%;
+            order: 3;
+            justify-content: center;
+
+            &:not(.open) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    & > button {
+        font-size: 2em;
+        text-align: left;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: none;
+
+        @media (max-width: 1024px) {
+            display: block;
+        }
     }
 
     &.fixed {
         position: fixed;
+        z-index: 300;
+        top: 0;
+        left: 0;
+        width: 100%;
         animation: page-header-in .2s;
         
         & > a > img {
             width: 6em;
+        }
+
+        & > button {
+            font-size: 1.5em;
         }
     }
     

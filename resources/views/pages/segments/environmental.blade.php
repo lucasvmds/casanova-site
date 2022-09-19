@@ -53,6 +53,25 @@
             <img src="/images/segments/environmental/sanitizacao.jpg" alt="sanitizacao" width="160" height="160" />
         </section>
 
+        <section>
+            <div>
+                <h2>Mais Serviços</h2>
+                <p>
+                    Até agora, você viu apenas alguns dos serviços que prestamos nesse segmento.
+                </p>
+                <p>
+                    Tirando eles, nós ainda temos uma gama de serviços que podem ajudar você e/ou sua empresa:
+                </p>
+                <ul>
+                    <li>Serviço de limpeza geral;</li>
+                    <li>Poda de arvores e jardinagem;</li>
+                    <li>Serviço de desentupimento;</li>
+                    <li>Limpeza de fossa.</li>
+                </ul>
+            </div>
+            <img src="/images/segments/environmental/poda.jpg" alt="pessoa podando árvore" width="160" height="160" />
+        </section>
+
         <x-other-segments remove="ambiental" />
     </main>
 @endsection

@@ -21,10 +21,17 @@ class SegmentItem extends Component
         ],
         'financeiro' => [
             'logo' => 'images/logos/financeiro/icone.png',
-            'logo_alt' => 'logo da casa nova serviços financeiros',
+            'logo_alt' => 'logo da casa nova créditos',
             'title' => 'Serviços Financeiros',
-            'text' => 'A Casa Nova Crédito atua nas áreas de corretagem, consultoria e vendas de seguros, previdência tanto para pessoas físicas e jurídicas.',
+            'text' => 'A Casa Nova Crédito atua com diversos bancos afim de lhe ofertar as melhores taxas do mercado. Seja para um crédito pessoal, consignado, financiamento, e por aí vai.',
             'link' => '/servicos-financeiros',
+        ],
+        'seguros' => [
+            'logo' => 'images/logos/financeiro/icone.png',
+            'logo_alt' => 'logo da casa nova corretora de seguros',
+            'title' => 'Corretora de Seguros',
+            'text' => 'A Casa Nova Corretora de Seguros atua nas áreas de corretagem, consultoria e vendas de seguros, previdência tanto para pessoas físicas e jurídicas.',
+            'link' => '/corretora-seguros',
         ],
         'veiculos' => [
             'logo' => 'images/logos/veiculos/icone.png',

@@ -12,16 +12,21 @@ class TeamItem extends Component
      * @var array
      */
     protected const DATA = [
-        'fulano' => [
-            'image' => 'images/home/team/fulano.png',
-            'name' => 'Fulano de Tal',
+        'agronomo' => [
+            'name' => 'Claudio Gotardo Filho ',
             'profession' => 'Engenheiro Agrônomo',
-            'formations' => [
-                'Formação A',
-                'Formação B',
-                'Formação C',
-            ],
-        ]
+            'code' => 'CREA 506.032.802-2',
+        ],
+        'civil' => [
+            'name' => 'Ernaldo Costa Calvoso',
+            'profession' => 'Engenheiro Civil',
+            'code' => 'CREA 060.138.626-9',
+        ],
+        'advogado' => [
+            'name' => 'Antonio Sergio da Fonseca Filho',
+            'profession' => 'Advogado',
+            'code' => 'OAB/SP 248041',
+        ],
     ];
 
     /**

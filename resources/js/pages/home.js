@@ -59,6 +59,7 @@ function linkScrollTo(event)
         top: target.offsetTop,
         behavior: 'smooth',
     });
+    document.querySelector('#page-header > nav').classList.remove('open');
 }
 
 /**

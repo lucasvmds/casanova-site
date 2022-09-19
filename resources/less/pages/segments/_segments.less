@@ -15,13 +15,23 @@
         justify-content: center;
         gap: 2em;
         max-width: 1024px;
+        @media (max-width: 767px) {
+            align-items: center;
+            flex-direction: column-reverse;
+        }
 
         &:nth-of-type(even) {
             flex-direction: row-reverse;
+            @media (max-width: 767px) {
+                flex-direction: column-reverse;
+            }
         }
 
         & > div {
             max-width: calc(100% - 20em);
+            @media (max-width: 767px) {
+                max-width: 100%;
+            }
 
             & > h2 {
                 padding-right: 2em;

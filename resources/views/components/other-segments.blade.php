@@ -1,4 +1,4 @@
-<section id="other-segments">
+<div id="other-segments">
   <h2>Conheça nossos outros segmentos</h2>
   <ul>
     @foreach ($segments as $segment)
@@ -7,4 +7,4 @@
         </li>
     @endforeach
   </ul>
-</section>
+</div>
