@@ -23,7 +23,7 @@
                     <li>Seguro de pessoas e muitos outros.</li>
                 </ul>
             </div>
-            <img src="/images/segments/financial/seguro.jpg" alt="seguro residencial" width="160" height="160" />
+            @image('segments/financial/seguro.jpg', 'alt="pessoa com pequena casa nas mãos" width="160" height="160"', 's,m')
         </section>
 
         <x-other-segments remove="seguros" />

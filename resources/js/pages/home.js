@@ -87,7 +87,20 @@ function initHashScroll()
         });
     }
 }
+
+function closeFormSuccessMessage()
+{
+    const message = document.querySelector('#contact-form-message');
+    if (message) {
+        setTimeout(
+            () => message.remove(),
+            10000
+        );
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     addLinksListener();
     initHashScroll();
+    closeFormSuccessMessage();
 }, { once: true });

@@ -15,7 +15,7 @@
                     Uma forma rápida e fácil de conseguir crédito, para realizar seus planos. Você pode contratar opções que taxas e prazos personalizados. Além de ter a segurança de parcelar direto na folha de pagamento ou aposentadoria.
                 </p>
             </div>
-            <img src="/images/segments/financial/money.jpg" alt="dinheiro" width="160" height="160" />
+            @image('segments/financial/money.jpg', 'alt="mãos segurando dinheiro" width="160" height="160"', 's,m')
         </section>
 
         <section>
@@ -28,7 +28,7 @@
                     Na Casa Nova Créditos você terá diversas opções de credito pessoal com as melhores taxas do mercado para escolher aquela que melhor combina com você.
                 </p>
             </div>
-            <img src="/images/segments/financial/mulher-dinheiro.jpg" alt="mulher dinheiro" width="160" height="160" />
+            @image('segments/financial/mulher-dinheiro.jpg', 'alt="mulher negra feliz segurando dinheiro" width="160" height="160"', 's,m')
         </section>
 
         <section>
@@ -41,7 +41,7 @@
                     Na Casa Nova Créditos você terá diversas opções de bancos com as melhores taxas do financiamento do mercado para facilitar que você realize seu sonho do carro próprio.
                 </p>
             </div>
-            <img src="/images/segments/financial/maos-dinheiro.jpg" alt="mãos dinheiro" width="160" height="160" />
+            @image('segments/financial/maos-dinheiro.jpg', 'alt="mãos segurando dinheiro" width="160" height="160"', 's,m')
         </section>
 
         <section>
@@ -54,7 +54,7 @@
                     Na Casa Nova Créditos você terá diversas opções de bancos com as melhores taxas do refinanciamento do mercado.
                 </p>
             </div>
-            <img src="/images/segments/financial/maos-trocando-dinheiro.jpg" alt="maos trocando dinheiro" width="160" height="160" />
+            @image('segments/financial/maos-trocando-dinheiro.jpg', 'alt="mão de uma pessoa entregando dinheiro para outra" width="160" height="160"', 's,m')
         </section>
 
         <x-other-segments remove="financeiro" />

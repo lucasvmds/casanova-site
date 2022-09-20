@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::post('send-message', [HomeController::class, 'send'])->name('home.send');
 Route::get('servicos-ambientais', [SegmentController::class, 'environmental'])->name('segments.environmental');
 Route::get('servicos-financeiros', [SegmentController::class, 'financial'])->name('segments.financial');
 Route::get('corretora-seguros', [SegmentController::class, 'insurance'])->name('segments.insurance');

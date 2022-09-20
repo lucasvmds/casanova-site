@@ -11,4 +11,4 @@
     <i class="far fa-arrow-down" aria-hidden="true"></i>
   </a>
 </div>
-<img src="{{ asset($image) }}" width="1094" height="769" loading="lazy" />
+@image($image, 'width="1094" height="769" loading="lazy"')

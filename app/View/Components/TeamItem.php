@@ -27,6 +27,12 @@ class TeamItem extends Component
             'profession' => 'Advogado',
             'code' => 'OAB/SP 248041',
         ],
+        'escritorio' => [
+            'name' => 'Escritório Cadmos',
+            'profession' => 'Responsável Fiscal',
+            'logo' => 'logo_cadmos.jpeg',
+            'logo_alt' => 'logo do parceiro escritório Cadmos',
+        ],
     ];
 
     /**

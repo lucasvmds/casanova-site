@@ -15,7 +15,7 @@
                     Nós atuamos no manejo ecológico de pragas para indústrias e empresas, com práticas preventivas no combate às pragas urbanas. Os resultados são imediatos e em longo prazo, com segurança para os processos produtivos, pessoas e com baixo impacto ambiental.
                 </p>
             </div>
-            <img src="/images/segments/environmental/pragas.jpg" alt="pragas" width="160" height="160" />
+            @image('segments/environmental/pragas.jpg', 'alt="desenho com várias pragas urbanas" width="160" height="160"', 's,m')
         </section>
 
         <section>
@@ -34,7 +34,7 @@
                     <li>Lacrais.</li>
                 </ul>
             </div>
-            <img src="/images/segments/environmental/pragas-pombos.jpg" alt="pragas pombos" width="160" height="160" />
+            @image('segments/environmental/pragas-pombos.jpg', 'alt="pombos juntos em marquise da construção na cidade" width="160" height="160"', 's,m')
         </section>
 
         <section>
@@ -50,7 +50,7 @@
                     Ela tem sido usada fortemente no combate ao Corona Vírus (Covid19).
                 </p>
             </div>
-            <img src="/images/segments/environmental/sanitizacao.jpg" alt="sanitizacao" width="160" height="160" />
+            @image('segments/environmental/sanitizacao.jpg', 'alt="pessoas fazendo a sanitização de uma casa/empresa" width="160" height="160"', 's,m')
         </section>
 
         <section>
@@ -69,7 +69,7 @@
                     <li>Limpeza de fossa.</li>
                 </ul>
             </div>
-            <img src="/images/segments/environmental/poda.jpg" alt="pessoa podando árvore" width="160" height="160" />
+            @image('segments/environmental/poda.jpg', 'alt="homem fazendo a poda de auma árvore" width="160" height="160"', 's,m')
         </section>
 
         <x-other-segments remove="ambiental" />

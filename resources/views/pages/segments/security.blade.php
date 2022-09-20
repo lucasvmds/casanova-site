@@ -15,7 +15,7 @@
                     Nossa empresa atende todos os setores como indústrias, condomínios e residências, empresas, hotéis, comércios, hospitais, universidades, faculdades, escolas, bancos, entre outros.
                 </p>
             </div>
-            <img src="/images/segments/security/seguranca-patrimonial.jpg" alt="segunrança patrimonial" width="160" height="160" />
+            @image('segments/security/seguranca-patrimonial.jpg', 'alt="homem fazendo o monitoramento do sistema de câmeras" width="160" height="160"', 's,m')
         </section>
 
         <section>
@@ -31,7 +31,7 @@
                     <li>Responsabilidade.</li>
                 </ul>
             </div>
-            <img src="/images/segments/security/escolta.jpg" alt="escolta" width="160" height="160" />
+            @image('segments/security/escolta.jpg', 'alt="homens realizando a escolta de cliente saindo do carro" width="160" height="160"', 's,m')
         </section>
 
         <section>
@@ -46,7 +46,7 @@
                     <li>Controle de acesso e eventos.</li>
                 </ul>
             </div>
-            <img src="/images/segments/security/controle-acesso.jpg" alt="controle de acesso" width="160" height="160" />
+            @image('segments/security/controle-acesso.jpg', 'alt="pessoa realizando revista em outra pessoa para controle de acesso" width="160" height="160"', 's,m')
         </section>
 
         <x-other-segments remove="seguranca" />

@@ -1,6 +1,6 @@
 #page-header {
     display: flex;
-    position: relative;
+    position: absolute;
     z-index: 300;
     top: 0;
     left: 0;
@@ -13,6 +13,23 @@
     background-color: #FFF;
     box-shadow: 0 .2em 2em rgba(0, 0, 0, .1);
     animation: page-header-out .2s;
+    
+    &.fixed {
+        position: fixed;
+        z-index: 300;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation: page-header-in .2s;
+        
+        & > a > img {
+            width: 6em;
+        }
+
+        & > button {
+            font-size: 1.5em;
+        }
+    }
 
     & > a > img {
         width: 12em;
@@ -58,23 +75,6 @@
 
         @media (max-width: 1024px) {
             display: block;
-        }
-    }
-
-    &.fixed {
-        position: fixed;
-        z-index: 300;
-        top: 0;
-        left: 0;
-        width: 100%;
-        animation: page-header-in .2s;
-        
-        & > a > img {
-            width: 6em;
-        }
-
-        & > button {
-            font-size: 1.5em;
         }
     }
     

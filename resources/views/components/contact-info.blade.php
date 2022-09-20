@@ -18,7 +18,9 @@
     </a>
   </li>
   <li>
-    <i class="far fa-location-dot" aria-hidden="true"></i>
-    Rua Regente Feijó 2000, Centro - Andradina/SP CEP 16901-027
+    <a href="https://www.google.com/search?q=Casa+Nova+Andradina" target="_blank">
+      <i class="far fa-location-dot" aria-hidden="true"></i>
+      Rua Regente Feijó 2000, Centro - Andradina/SP CEP 16901-027
+    </a>
   </li>
 </ul>

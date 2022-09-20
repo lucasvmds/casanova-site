@@ -1,4 +1,12 @@
-<form id="contact-form" method="POST" action="" class="contact-form-component" onsubmit="return false">
+<form id="contact-form" method="POST" action="{{ route('home.send') }}" class="contact-form-component">
+  @csrf
+
+  @if (session('message_sent'))
+      <b id="contact-form-message">
+        Mensagem enviada com sucesso
+      </b>
+  @endif
+
   <div>
     <input type="text" size="60" placeholder="Seu nome" name="name" value="{{ old('name') }}" required />
     @error('name')
@@ -24,8 +32,8 @@
   </div>
 
   <div>
-    <textarea placeholder="Mensagem" rows="15" name="message" required>{{ old('message') }}</textarea>
-    @error('message')
+    <textarea placeholder="Mensagem" rows="15" name="message_content" required>{{ old('message_content') }}</textarea>
+    @error('message_content')
         <br />
         <small>{{ $message }}</small>
     @enderror

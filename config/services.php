@@ -31,4 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'imagekit' => [
+        'public_key' => env('IMAGEKIT_PUB_KEY'),
+        'private_key' => env('IMAGEKIT_PRIV_KEY'),
+        'endpoint' => env('IMAGEKIT_ENDPOINT'),
+    ]
+
 ];

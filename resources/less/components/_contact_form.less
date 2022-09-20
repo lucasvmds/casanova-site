@@ -3,11 +3,20 @@
         min-width: 500px;
     }
 
+    & > b {
+        display: block;
+        padding: 1em;
+        font-weight: 500;
+        color: #008000;
+        background-color: rgba(0, 128, 0, .2);
+        border-radius: .5em;
+    }
+
     & > div {
         margin: 1em 0;
 
         & > input, & > textarea {
-            display: block;
+            display: inline-block;
             width: 100%;
             padding: .5em 2em;
             font-family: inherit;
@@ -25,6 +34,11 @@
 
         & > textarea {
             resize: vertical;
+        }
+
+        & > small {
+            margin-left: 1em;
+            color: #F00;
         }
     }
 

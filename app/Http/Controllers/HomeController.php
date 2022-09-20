@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Actions\SendEmailMessages;
+use App\Http\Requests\SendMessageRequest;
 
 class HomeController extends Controller
 {
@@ -13,5 +14,11 @@ class HomeController extends Controller
     public function index()
     {
         return view('pages.home.index');
+    }
+
+    public function send(SendMessageRequest $request)
+    {
+        SendEmailMessages::run($request->validated());
+        return redirect('/#contato')->with('message_sent', true);
     }
 }

@@ -23,7 +23,7 @@
                     Além disso, contamos com diversas formas de te ajudar na hora de comprar seu veículos, graças a <a href="/servicos-financeiros"><b>Casa Nova Créditos</b></a> com diversas opções de credito para você! 
                 </p>
             </div>
-            <img src="/images/segments/vehicles/compra-carro.jpg" alt="comprando carro" width="160" height="160" />
+            @image('segments/vehicles/compra-carro.jpg', 'alt="mão de uma pessoa entregando chave de carro para outroa" width="160" height="160"', 's,m')
         </section>
 
         <x-other-segments remove="veiculos" />

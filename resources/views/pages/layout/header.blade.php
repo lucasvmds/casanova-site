@@ -3,7 +3,7 @@
         <i class="fa-regular fa-bars"></i>
     </button>
     <a href="/">
-        <img width="213" height="67" alt="logo da casa nova empreendimentos" src="{{ asset('images/logos/'.$logo.'/logo.png') }}" />
+        @image("logos/$logo/logo.png", 'width="213" height="67" alt="logo da casa nova empreendimentos"', 's,m')
     </a>
     <nav>
         @if ($path === '/')
@@ -19,10 +19,10 @@
         <a href="/#contato">Contato</a>
     </nav>
     <address>
-        <a href="https://facebook.com" target="_blank">
+        <a href="https://facebook.com/casanovaempreendimentoss/" target="_blank">
             <i class="fab fa-facebook-f">Página do Facebook</i>
         </a>
-        <a href="https://instagram.com" target="_blank">
+        <a href="https://instagram.com/cn_empreendimentos_" target="_blank">
             <i class="fab fa-instagram">Página do Instagram</i>
         </a>
     </address>

@@ -115,4 +115,5 @@ return [
         ],
     ],
 
+    'recipients' => explode(',', env('MAIL_RECIPIENTS', '')),
 ];
